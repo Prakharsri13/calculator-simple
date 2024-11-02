@@ -1,0 +1,114 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "New Amsterdam", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+body {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(45deg, #0a0a0a, #3a4452);
+}
+
+#header {
+    text-align: center; /* Center the text in the header */
+    text-decoration:solid;
+    
+}
+h1 {
+    color: #ffffff; /* Set h1 text color to white */
+}
+
+.calculator {
+    border: 1px solid blue;
+    padding: 20px;
+    border-radius: 16px;
+    background: transparent;
+    box-shadow: 0px 3px 15px #3a4452;
+    max-width: 90vw;
+    max-height: 90vh;
+    margin-top: 1rem; /* Adds space between header and calculator */
+}
+
+.calculator-header {
+    margin-bottom: 1rem; /* Space below the header */
+    color: #ffffff; /* Change to your desired header color */
+}
+
+input {
+    width: 100%;
+    padding: 24px;
+    margin: 10px 0;
+    background: transparent;
+    box-shadow: 0px 3px 15px rgba(84, 84, 84, 0.1);
+    font-size: 2rem;
+    text-align: right;
+    cursor: pointer;
+    color: #ffffff;
+}
+
+button {
+    border: 0;
+    width: 60px;
+    height: 60px;
+    margin: 10px;
+    border-radius: 50%;
+    background: transparent;
+    color: #ffffff;
+    font-size: 1.5rem;
+    cursor: pointer;
+    box-shadow: -8px -8px 15px rgba(255, 255, 255, 0.1);
+}
+
+.equal {
+    background-color: #fb7c14;
+}
+
+.operation {
+    color: rgb(131, 255, 131);
+}
+
+/* Media queries for responsiveness */
+@media (max-width: 768px) {
+    .calculator {
+        padding: 15px;
+        width: 90vw;
+    }
+
+    input {
+        font-size: 1.5rem;
+        padding: 15px;
+    }
+
+    button {
+        width: 50px;
+        height: 50px;
+        font-size: 1.2rem;
+        margin: 5px;
+    }
+}
+
+@media (max-width: 480px) {
+    .calculator {
+        padding: 10px;
+        width: 95vw;
+    }
+
+    input {
+        font-size: 1.2rem;
+        padding: 10px;
+    }
+
+    button {
+        width: 40px;
+        height: 40px;
+        font-size: 1rem;
+        margin: 5px;
+    }
+}
